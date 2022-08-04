@@ -1,6 +1,23 @@
 import { useState} from 'react'
 import Button from './Button'
 
+//images
+import cakeslide0 from '../images/cakeslide0.jpg'
+import cakeslide1 from '../images/cakeslide1.jpg'
+import cakeslide2 from '../images/cakeslide2.jpg'
+import cakeslide3 from '../images/cakeslide3.jpg'
+import cakeslide4 from '../images/cakeslide4.jpg'
+import cakeslide5 from '../images/cakeslide5.jpg'
+
+const cakeImages = [
+  cakeslide0,
+  cakeslide1,
+  cakeslide2,
+  cakeslide3,
+  cakeslide4,
+  cakeslide5
+];
+
 const Chocolate = () => {
 
   const [cakeSlideSelection, setCakeSlideSelection] = useState(0)
@@ -8,11 +25,10 @@ const Chocolate = () => {
   const clickSlide = (id) => {
     setCakeSlideSelection(id)
   }
-  // how many cake supplies images are there
-  const numimages = 6;
+
   // make a button element for each image
   let slideimagebuttons = [];
-  for (let i = 0; i < numimages; i++) {
+  for (let i = 0; i < cakeImages.length; i++) {
       slideimagebuttons.push(<Button className='App-slide-btn' key={i} onClick={() => {clickSlide(i)}} text="⬤"/>);
   }
 
@@ -33,10 +49,6 @@ const Chocolate = () => {
         </div>
       </div>
 
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </div>
 
       <h3>Cake Making Suplies include...</h3>
       <div>
@@ -54,7 +66,7 @@ const Chocolate = () => {
         </ul>
 
         <div className='App-cakeslides-box'>
-          <img src={`../images/cakeslide${cakeSlideSelection}.jpg`} alt="cake supplies" />
+          <img src={cakeImages[cakeSlideSelection]} alt="cake supplies" />
           <div>
             {slideimagebuttons}
           </div>

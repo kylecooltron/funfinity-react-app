@@ -1,6 +1,30 @@
 import { useState} from 'react'
 import Button from './Button'
 
+//images
+import bookslide0 from '../images/bookslide0.jpg'
+import bookslide1 from '../images/bookslide1.jpg'
+import bookslide2 from '../images/bookslide2.jpg'
+import bookslide3 from '../images/bookslide3.jpg'
+import bookslide4 from '../images/bookslide4.jpg'
+import bookslide5 from '../images/bookslide5.jpg'
+import bookslide6 from '../images/bookslide6.jpg'
+import bookslide7 from '../images/bookslide7.jpg'
+import bookslide8 from '../images/bookslide8.jpg'
+
+
+const bookImages = [
+  bookslide0,
+  bookslide1,
+  bookslide2,
+  bookslide3,
+  bookslide4,
+  bookslide5,
+  bookslide6,
+  bookslide7,
+  bookslide8
+];
+
 
 const Books = () => {
 
@@ -9,11 +33,10 @@ const Books = () => {
   const clickSlide = (id) => {
     setBookSlideSelection(id)
   }
-  // how many books types images are there
-  const numimages = 6;
+
   // make a button element for each image
   let slideimagebuttons = [];
-  for (let i = 0; i < numimages; i++) {
+  for (let i = 0; i < bookImages.length; i++) {
       slideimagebuttons.push(<Button className='App-slide-btn' key={i} onClick={() => {clickSlide(i)}} text="⬤"/>);
   }
 
@@ -35,7 +58,7 @@ const Books = () => {
     </div>
 
     <div className='App-booklides-box'>
-      <img src={`../images/bookslide${bookSlideSelection}.jpg`} alt="types of books" />
+      <img src={bookImages[bookSlideSelection]} alt="types of books" />
       <div>
         {slideimagebuttons}
       </div>

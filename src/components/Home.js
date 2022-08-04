@@ -5,6 +5,14 @@ import InfoSection from './InfoSection'
 import Product from './Product'
 import EmailForm from './EmailForm'
 
+
+//images
+import games_img from '../images/product_games.jpg';
+import chocolate_img from '../images/product_chocolate.jpg';
+import toys_img from '../images/product_toys.jpg';
+import books_img from '../images/product_books.jpg';
+
+
 const Home = () => {
 
   useLayoutEffect(() => {
@@ -16,25 +24,25 @@ const Home = () => {
       id: 0,
       text: "Games",
       description: "Board games were the reason we opened our store in the first place! We carry  many different strategy games, as well as games for the whole family, card games, and games for even the youngest of children. come in today to find what is right for you!",
-      imgsrc: "../images/product_games.jpg",
+      imgsrc: games_img,
     },
     {
       id: 1,
       text: "Chocolate",
       description: "We carry Peters and Guittard molding and bar chocolates, chocolate colorings, and a variety of cake making supplies. Whether you are decorating a birthday cake or a wedding cake, we have the products you need to make it a success! ",
-      imgsrc: "../images/product_chocolate.jpg",
+      imgsrc: chocolate_img,
     },
     {
       id: 2,
       text: "Toys",
       description: "We carry a wide selection of toys for every age!From building toys to dress ups, and from science to baby toys, we have it all! Our employees have a detailed knowledge of our products, and can help you find the right toy for you.",
-      imgsrc: "../images/product_toys.jpg",
+      imgsrc: toys_img,
     },
     {
       id: 3,
       text: "Books",
       description: "Our book selection is varied, from “The Diary of Fredrick Douglas” to “Junie B. Jones”. We carry books for every age and in every genre, and if we don’t carry it, we will special order it for you. We also offer a 10% discount on EVERY book we sell! ",
-      imgsrc: "../images/product_books.jpg",
+      imgsrc: books_img,
     },
   ])
 

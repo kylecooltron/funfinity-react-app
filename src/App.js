@@ -3,8 +3,13 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // images and styling
-import logo from './logo.png';
+import logo from './images/logo.png';
+
+
+// styling
 import './App.css';
+
+
 
 // components
 import Header from './components/Header'

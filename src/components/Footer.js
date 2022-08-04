@@ -2,8 +2,8 @@
 import { Link } from 'react-router-dom';
 
 // images
-import logo_facebook from '../socialfblogo.png';
-import logo_instagram from '../socialiglogo.png';
+import logo_facebook from '../images/socialfblogo.png';
+import logo_instagram from '../images/socialiglogo.png';
 
 const Footer = ({ logo }) => {
 
