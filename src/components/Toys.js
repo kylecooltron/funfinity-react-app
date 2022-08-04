@@ -60,7 +60,7 @@ const Toys = () => {
       <div>
         {
         toysTypes.map((toyType) => (
-          <figure>
+          <figure key={toyType.text}>
             <img src={toyType.img} alt={`${toyType.text} Toys`} />
             <figcaption>{toyType.text}</figcaption>
           </figure>
