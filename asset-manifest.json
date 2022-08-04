@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.35bec15f.css",
-    "main.js": "/static/js/main.9db36d82.js",
-    "static/media/logo.png": "/static/media/logo.6d78c20f00f1e92ab122.png",
-    "static/media/banner.jpg": "/static/media/banner.3a677614ec5a8246284b.jpg",
-    "index.html": "/index.html",
-    "main.35bec15f.css.map": "/static/css/main.35bec15f.css.map",
-    "main.9db36d82.js.map": "/static/js/main.9db36d82.js.map"
+    "main.css": "/funfinity-react-app/static/css/main.35bec15f.css",
+    "main.js": "/funfinity-react-app/static/js/main.1c6ceb7c.js",
+    "static/media/logo.png": "/funfinity-react-app/static/media/logo.6d78c20f00f1e92ab122.png",
+    "static/media/banner.jpg": "/funfinity-react-app/static/media/banner.3a677614ec5a8246284b.jpg",
+    "index.html": "/funfinity-react-app/index.html",
+    "main.35bec15f.css.map": "/funfinity-react-app/static/css/main.35bec15f.css.map",
+    "main.1c6ceb7c.js.map": "/funfinity-react-app/static/js/main.1c6ceb7c.js.map"
   },
   "entrypoints": [
     "static/css/main.35bec15f.css",
-    "static/js/main.9db36d82.js"
+    "static/js/main.1c6ceb7c.js"
   ]
 }
