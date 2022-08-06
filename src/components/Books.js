@@ -2,6 +2,9 @@ import { useState} from 'react'
 import Button from './Button'
 
 //images
+import books_teen from '../images/books_teen.jpg'
+import books_children from '../images/books_children.jpg'
+
 import bookslide0 from '../images/bookslide0.jpg'
 import bookslide1 from '../images/bookslide1.jpg'
 import bookslide2 from '../images/bookslide2.jpg'
@@ -37,23 +40,33 @@ const Books = () => {
   // make a button element for each image
   let slideimagebuttons = [];
   for (let i = 0; i < bookImages.length; i++) {
-      slideimagebuttons.push(<Button className='App-slide-btn' key={i} onClick={() => {clickSlide(i)}} text="⬤"/>);
+      slideimagebuttons.push(
+      <Button 
+      className={'App-slide-btn ' + (bookSlideSelection === i ? 'active' : '')} 
+      key={i} 
+      onClick={() => {clickSlide(i)}} 
+      text="⬤"/>
+      );
   }
 
   return (
-  <div>
+  <div className='App-books'>
     <h2>Books</h2>
     
-    <div>
+    <div className='App-book-typeboxes'>
       <div>
-        <img src="" alt="" />
-        <h4>Teenage and YA Books</h4>
-        <p>We carry many different genres and sizes of books to fit the needs of every type of reader. if fact, most of our staff has read several of the books on our shelves, and will recommend their favorites! Ask for suggestions and they will not disappoint.</p>
+        <img src={books_teen} alt="books for teenagers and young adults" />
+        <div className='App-book-type-teen'>
+          <h4>Teenage and YA Books</h4>
+          <p>We carry many different genres and sizes of books to fit the needs of every type of reader. if fact, most of our staff has read several of the books on our shelves, and will recommend their favorites! Ask for suggestions and they will not disappoint.</p>
+        </div>
       </div>
       <div>
-        <img src="" alt="" />
-        <h4>Children’s and Board Books</h4>
-        <p>Pick from dozens of children’s books, with classics like Brown Bear, Brown Bear or Green Eggs and Ham, or try something new, with books such as The Forgetful Dragon, or When Dad’s Don’t Grow Up. Either way, these books are meant for every child!</p>
+        <img src={books_children} alt="books for children" />
+        <div className='App-book-type-children'>
+          <h4>Children’s and Board Books</h4>
+          <p>Pick from dozens of children’s books, with classics like Brown Bear, Brown Bear or Green Eggs and Ham, or try something new, with books such as The Forgetful Dragon, or When Dad’s Don’t Grow Up. Either way, these books are meant for every child!</p>
+        </div>
       </div>
     </div>
 

@@ -50,28 +50,31 @@ const Home = () => {
   return (
     <div>
       <Banner/>
-      <div>
       <InfoSection/>
-        <p>
-          Funfinity is a family owned and operated store in Springville, Utah. We carry a variety of toys, games, books, and chocolate supplies.
-        </p>
-        <p>
-          We value our customers, and do our best every day to help you find the perfect gift. Our employees are committed to giving you the best possible experience as you shop. 
-        </p>
-        <p>
-          As always, thank you for your continued support of our store during these difficult times. We love our customers!
-        </p>
-      </div>
+      <div className='App-home-main'>
+        <div className="App-intro-paragraphs">
+          <p>
+            Funfinity is a family owned and operated store in Springville, Utah. We carry a variety of toys, games, books, and chocolate supplies.
+          </p>
+          <p>
+            We value our customers, and do our best every day to help you find the perfect gift. Our employees are committed to giving you the best possible experience as you shop. 
+          </p>
+          <p style={{fontWeight:"bold", textAlign:"center", marginTop: '2.5em'}}>
+            As always, thank you for your continued support of our store during these difficult times. We love our customers!
+          </p>
+        </div>
 
-      <div>
-        {products.map((product) => (
-          <Product 
-            key={product.id} 
-            text={product.text}
-            description={product.description}
-            imgsrc={product.imgsrc}
-            />
-        ))}
+        <div>
+          {products.map((product) => (
+            <Product 
+              className='App-product-box'
+              key={product.id} 
+              text={product.text}
+              description={product.description}
+              imgsrc={product.imgsrc}
+              />
+          ))}
+        </div>
       </div>
 
       <div>

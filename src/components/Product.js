@@ -1,7 +1,7 @@
 
-function Product( { text, description, imgsrc }) {
+function Product( { className, text, description, imgsrc }) {
   return (
-    <div>
+    <div className={className} >
       <h4>{text}</h4>
       <p>{description}</p>
       <img src={imgsrc} alt={text} />

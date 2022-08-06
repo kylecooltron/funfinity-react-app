@@ -49,6 +49,7 @@ function App() {
 
       <Routes>
         <Route path='/' element={ <Home /> }/>
+        <Route path='/funfinity-react-app' element={ <Home /> }/>
         <Route path='/toys' element={ <Toys /> }/>
         <Route path='/books' element={ <Books /> }/>
         <Route path='/boardgames' element={ <BoardGames /> }/>

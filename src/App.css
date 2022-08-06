@@ -3,8 +3,19 @@
 body, html{
   margin: 0;
   width: 100%;
+  font-size: 20px;
 }
 
+a
+{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+a:hover
+{
+  color:black;
+}
 
 /* header */
 
@@ -14,11 +25,42 @@ body, html{
 
 .App-email-signup
 {
-  background-color: rgb(255, 65, 65);
+  background-color: rgb(240, 37, 37);
   color: white;
   padding: 0.5em;
   font-size: large;
 }
+
+/* close email signup button  */
+.App-email-signup button
+{
+float:right;
+background-color: transparent;
+color: white;
+font-weight: bolder;
+font-size: large;
+border: none;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.App-email-signup button:hover
+{
+color:black;
+}
+
+/* text that says Click here to sign up  */
+.App-email-signup a
+{
+margin-left: 2em;
+}
+
+.App-email-signup a:hover
+{
+  text-decoration: underline;
+}
+
+
 
 
 /* navbar */
@@ -26,16 +68,28 @@ body, html{
 .App-navbar
 {
 background-color: rgb(52, 133, 255);
-display: flex;
-flex-direction: row;
+/* display: flex;
+flex-direction: row; */
+text-align: center;
 width: 100%;
+position: relative;
+z-index: 2;
+}
+
+.App-ham
+{
+  float:left;
+  margin: 0.3em;
+  padding: 1em;
+  font-size: larger;
 }
 
 .App-logo
 {
   max-width: 300px;
   object-fit: contain;
-  padding: 1em;
+  padding: 0.5em 1em;
+  margin-right: 2.5em;
 }
 
 .sticky {
@@ -46,7 +100,7 @@ width: 100%;
 }
 
 .sticky + .App-nav-empty {
-  padding-top: 112px;
+  padding-top: 105px;
 }
 
 
@@ -55,95 +109,431 @@ width: 100%;
 nav {
   position: fixed;
   top: 0;
-    /* margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row; */
-    background-color: rgb(188, 212, 212);
-    padding: 2em;
+  background-color: white;
+  padding: 0.5em 1em;
+  width: 80%;
+  height: 100%;
+  z-index: 10;
 }
-
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 80%;
-    background-color: rgb(112, 154, 245);
+    padding: 2.5em;
+    margin-top: 1.5em;
 }
 
 nav ul li a {
     display: block;
-    color: #eee;
-    padding: .5rem 0;
+    padding: 1em 1em;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     transition: 0.5s;
+    color: black;
 }
 
+/* Pseudo element set to hover style, so it pre-sets the width of the element and visibility: hidden hides the pseudo element from actual view. 
+   This way the nav bar does not expand when the longest <a> text turns bold on hover */
+nav ul li a::before {
+  display: block;
+  content: "Board Games";
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+nav button 
+{
+  float:left;
+  background-color: transparent;
+  font-weight: bolder;
+  font-size: larger;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 1em;
+}
+nav ul li a {
+  color:rgb(61, 61, 61)
+}
+
+nav button:hover
+{
+color: rgb(255, 81, 0);
+}
 
 nav ul li a:hover {
     background-color: #7cccfa;
-    color: black;
     font-weight: bold;
 }
 nav ul li.active a {
-    background-color: #4b6428;
-    color: #fff;
+  font-weight: bold;
+  color: black;
 }
 
+.App-navbtn-conact
+{
+  margin-top: 4em;
+}
+.App-navbtn-conact a
+{
+  font-size: larger;
+  letter-spacing: 0.1em;
+}
 
 
 /* page sections */
 
-.App-banner{
+.App-banner
+{
   background-color: yellow;
-  min-height: 150px;
+  padding: 1em 2em 4em 2em;
+  text-align: center;
+  font-size: large;
+  letter-spacing: 0.15em;
 }
+
+.App-banner img
+{
+width: 100%;
+outline: 10px solid rgb(255, 158, 13);
+margin-top: 1em;
+border-radius: 1em;
+}
+
+
 
 .App-infosection
 {
 background-color: greenyellow;
-min-height: 150px;
+padding: 1em 2em 2em;
+text-align: center;
+font-size: large;
+}
+.App-infosection h3
+{
+margin: 1em 0 0;
+}
+.App-info-hours p
+{
+  margin: 0.25em;
 }
 
 
+.App-home-main
+{
+  background-color: #0765f1;
+  padding: 1em;
+}
+.App-intro-paragraphs
+{
+  background-color:rgb(113, 227, 255);
+  margin-top: 1em;
+  padding: 2em;
+  border-radius: 2em;
+  color: rgb(0, 58, 146);
+  font-size: large;
+}
+
+.App-product-box
+{
+  padding: 1em 1em;
+  margin: 3em 0;
+  text-align: center;
+  border-top: 1px solid rgb(21, 80, 170);
+  color: white;
+}
+
+.App-product-box h4
+{
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+}
+
+.App-product-box p
+{
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+.App-product-box img
+{
+  max-width: 100%;
+}
+
+.App-email-form
+{
+  background-color: yellow;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.App-email-form a
+{
+  background-color: #169eec;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+iframe
+{
+width: 100%;
+}
+
+
+.App-toys
+{
+  background-color: rgb(185, 255, 55);
+  text-align: center;
+  padding: 1em 0;
+}
+
+h2
+{
+  font-size: 2.5em;
+  border-bottom: 1px solid rgb(121, 168, 12);
+  width: 80%;
+  margin: 0 auto 1em;
+}
+
+.App-toys img
+{
+  max-width: 100%;
+  border-radius: 1em;
+  outline: 8px solid aqua;
+}
+.App-toys figure
+{
+  background-color: #0966bd;
+  padding: 1em;
+  border-radius: 1em;
+  color: white;
+  font-size: 1.5em;
+}
+.App-toys figure figcaption
+{
+  padding-top: 0.5em;
+}
+
+
+.App-books
+{
+  background-color: rgb(250, 253, 74);
+  text-align: center;
+  padding: 1em 0;
+}
+
+.App-book-typeboxes div
+{
+  margin: 1em 1em;
+  padding: 1em;
+  position: relative;
+}
+.App-book-typeboxes img
+{
+  width: 100%;
+  outline: 8px solid rgb(145, 196, 7);
+  border-radius: 1em;
+}
+
+.App-book-typeboxes div div
+{
+  background-color: rgba(236, 232, 232, 0.932);
+  position: absolute;
+  top: 25%;
+  width: 45%;
+  font-size: large;
+}
+
+.App-book-typeboxes .App-book-type-teen
+{
+  left: 10%;
+}
+
+.App-book-typeboxes .App-book-type-children
+{
+  right: 10%;
+}
+
+
+
+.App-booklides-box
+{
+padding: 1.5em;
+background-color: #ff511c;
+}
+
+.App-booklides-box img
+{
+  width: 100%;
+  outline: 5px solid rgb(0, 255, 21);
+  border-radius: 1em;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+
+
 /* chocolate page  */
+
+.App-chocolate-types
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 1em;
+}
+
+.App-chocolate-types div
+{
+  padding: 0 1em;
+}
+
+
+.App-chocolate-types img
+{
+width: 100%;
+max-width: 200px;
+display: table;
+margin: 0 auto;
+}
+
 .App-slide-btn
 {
   border: 0;
-  padding: 1em 2em;
-  color: rgb(78, 159, 197);
+  padding: 1em 1em;
+  color: rgb(181, 187, 190);
   background-color: rgba(0,0,0,0);
+}
+
+.active
+{
+color: rgb(92, 92, 92);
 }
 
 .App-cakeslides-box
 {
-  background-color: #7cccfa;
+  /* background-color: #7cccfa; */
   border-radius: 1em;
   margin: 1em auto;
-  width: 50%;
+  width: 60%;
   padding: 1em;
+  text-align: center;
 }
 
 .App-cakeslides-box img
 {
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
+  border: 3px solid cornflowerblue;
+  border-radius: 1em;
   object-fit: cover;
 }
+
+.App-cake-supplies
+{
+  padding: 0 2em;
+  background-color: #b8b7b6;
+  width: 100%;
+}
+
+.App-cake-supplies div
+{
+  display: table;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+.App-faq-container
+{
+  background-color: #7cccfa;
+  padding: 1em 2em;
+}
+
+.App-faq-container dl dt
+{
+  font-weight: bold;
+}
+
+.App-faq-container dl dd
+{
+  margin: 0.5em 0 1em;
+}
+
+.App-faq-container p
+{
+  text-align: center;
+  width: 100%;
+  padding-top: 2em;
+}
+
+
+
+.App-boardgames-container
+{
+padding: 1em;
+background-color: rgb(213, 255, 23);
+text-align: center;
+}
+
+.App-boardgames-container img
+{
+border: 8px solid rgb(247, 158, 43);
+margin: 1em;
+border-radius: 1em;
+height: 600px;
+}
+
+
+
+.App-contact-form
+{
+  background-color: rgb(83, 205, 253);
+}
+
 
 /* footer */
 
 footer {
-background-color: #7cccfa;
-text-align: center;
+  background-color: #7cccfa;
+  text-align: center;
+  padding: 1em 1em 2em;
 }
 
 .App-footer-logo
 {
   max-width: 200px;
   object-fit: contain;
-  padding: 1em;
+  padding: 0em 0 0.1em;
+}
+
+
+.App-footer-contact-info div
+{
+padding: 0 0.5em;
+font-size: large;
+display: inline-block;
+}
+
+.App-footer-social-links img
+{
+  padding: 0.5em;
+  margin: 0 0.25em;
+  transition: 0.5s;
+  border-radius: 0.5em;
+}
+.App-footer-social-links img:hover
+{
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.App-footer-links
+{
+  margin-top: 0.25em;
+}
+.App-footer-links a
+{
+  padding: 0 0.5em;
 }

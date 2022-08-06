@@ -33,6 +33,7 @@ const Header = ( { logo, toggleNavMenu }) => {
   const getPosition = () => {
     const y = myRef.current.offsetTop;
     setY(y);
+    console.log(y);
   };
 
 
@@ -46,18 +47,14 @@ const Header = ( { logo, toggleNavMenu }) => {
       { /* show the email signup bar at the top of the page until the X button is clicked */
         showEmailSignup &&
         <div className ="App-email-signup">
-          Click 
-          <Link to='/emailform'> here </Link>
-          to sign up for emails. 
+          <Link to='/emailform'> Click here to sign up for our email newsletter! </Link>
           <button onClick={closeEmail}> X </button>
         </div>
       }
 
-      <div ref={myRef} className={"App-navbar" + ((scrollPosition > y) ? ' sticky' : '')}>
+      <div ref={myRef} className={"App-navbar" + ((scrollPosition >= y) ? ' sticky' : '')}>
+        <a className="App-ham" href="#/" onClick={toggleNavMenu} >☰</a>
         <Link to='/'><img src={logo} className="App-logo" alt="logo" /></Link>
-       
-
-        <a href="#/" onClick={toggleNavMenu} >☰</a>
       </div>
       <div className="App-nav-empty"></div>
 

@@ -2,13 +2,9 @@ import { Link } from 'react-router-dom'
 
 const FAQ = () => {
   return (
-    <div>
+    <div className='App-faq-container'>
       <h2>Frequently Asked Questions</h2>
-      <div>
-        <p>Have other questions? <Link to='/contact'> Contact Us »</Link> </p>
-      </div>
-
-      <div>
+    
         <dl>
           <dt>Do you carry cake making supplies?</dt>
           <dd>Yes! We carry a variety of cake dummies, rounds, colorings, flavorings, and much more! Call us with any specific product questions</dd>
@@ -30,7 +26,11 @@ const FAQ = () => {
           <dd>Any return without a receipt will be subject to a 20%  deduction to account for any recent sale prices or coupons. </dd>
 
         </dl>
-      </div>
+
+
+
+        <p>Have other questions? <Link to='/contact'> Contact Us »</Link> </p>
+   
 
     </div>
   )

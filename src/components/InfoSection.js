@@ -6,7 +6,7 @@ const InfoSection = () => {
       <p>164 S. Main Street, Springville UT</p>
       <p>Call us at: (801) 491-8940</p>
 
-      <div> 
+      <div className="App-info-hours"> 
         <h3>Store Hours</h3>
         <p>Monday - Saturday: 9am to 7pm</p>
       </div>

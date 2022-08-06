@@ -29,7 +29,13 @@ const Chocolate = () => {
   // make a button element for each image
   let slideimagebuttons = [];
   for (let i = 0; i < cakeImages.length; i++) {
-      slideimagebuttons.push(<Button className='App-slide-btn' key={i} onClick={() => {clickSlide(i)}} text="⬤"/>);
+      slideimagebuttons.push(
+      <Button 
+      className={'App-slide-btn ' + (cakeSlideSelection === i ? 'active' : '')} 
+      key={i} 
+      onClick={() => {clickSlide(i)}} 
+      text="⬤"/>
+      );
   }
 
   return (
@@ -49,21 +55,25 @@ const Chocolate = () => {
         </div>
       </div>
 
-
-      <h3>Cake Making Suplies include...</h3>
-      <div>
-        <ul>
-          <li>Foam Cake dummies and Cake pans (Round and Square) </li>
-          <li>Frosting tips and bags</li>
-          <li>Buttercream and Fondants</li>
-          <li>Meringue Powder and Royal Icing mix</li>
-          <li>Candy and Chocolate Colorings</li>
-          <li>Candy Flavorings</li>
-          <li>Baking Emulsions</li>
-          <li>Sprinkles and Sanding Sugars</li>
-          <li>Candy and Cake boxes</li>
-          <li>and much more!</li>
-        </ul>
+      <div className='App-cake-supplies'>
+        <div>
+          <h3>Cake Making Suplies include...</h3>
+            <ul>
+              <li>Foam Cake dummies and Cake pans</li>
+              <li style={{listStyle:'none'}}>(Round and Square) </li>
+              <li>Frosting tips and bags</li>
+              <li>Buttercream and Fondants</li>
+              <li>Meringue Powder and Royal Icing mix</li>
+              <li>Candy and Chocolate Colorings</li>
+              <li>Candy Flavorings</li>
+              <li>Baking Emulsions</li>
+              <li>Sprinkles and Sanding Sugars</li>
+              <li>Candy and Cake boxes</li>
+              <li>and much more!</li>
+            </ul>
+        </div>
+      </div>
+      
 
         <div className='App-cakeslides-box'>
           <img src={cakeImages[cakeSlideSelection]} alt="cake supplies" />
@@ -74,8 +84,7 @@ const Chocolate = () => {
 
       </div>
 
-
-    </div>
+  
   )
 }
 

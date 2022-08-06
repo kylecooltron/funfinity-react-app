@@ -5,11 +5,12 @@ import banner from '../images/banner.jpg';
 const Banner = () => {
   return (
     <div className='App-banner'>
-      
-      <img src={banner} alt="" />
+      <h2>Home</h2>
       <p> 
-        Memorial Day Hours: 10 am - 5 pm
+        Special Message Here
       </p>
+      <img src={banner} alt="" />
+      
 
     </div>
   )

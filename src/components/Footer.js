@@ -7,25 +7,37 @@ import logo_instagram from '../images/socialiglogo.png';
 
 const Footer = ({ logo }) => {
 
+  const scrollTop = () => {
+    window.scrollTo(0, 0)
+  }
 
   return (
     <footer>
-
+      <Link to="/" onClick={scrollTop} >
       <img src={logo} className="App-footer-logo" alt="logo" />
-      <div>
-        <p>Address: 164 South Main Street, Springville Ut</p>
-        <p>Phone: (801) 491-8940</p>
-        <p>Email: store@funfinity.com</p>
+      </Link>
+
+      <div className='App-footer-contact-info'>
+        <div> 
+          <b>Address: </b>  164 South Main Street, Springville UT </div>
+        <div> 
+          <b>Email: </b>  store@funfinity.com </div>
+        <div>
+          <b>Phone: </b>
+           (801) 491-8940</div>
         <br />
-        <p>Hours: Mon-Sat 10am - 6pm</p>
+        <p>
+          <b>Hours: </b>
+          
+           Mon-Sat 10am - 6pm</p>
       </div>
 
-      <div>
+      <div className='App-footer-social-links'>
         <a href="https://www.facebook.com/funfinity" target="_blank" rel="noreferrer"><img src={logo_facebook} alt="facebook logo link" /></a>
         <a href="https://www.instagram.com/funfinityut/" target="_blank" rel="noreferrer"><img src={logo_instagram} alt="instagram logo link" /></a>
       </div>
 
-      <div>
+      <div className='App-footer-links'>
         <Link to="/contact">Contact Us</Link>
         <Link to="/job">Job Application</Link>
         <a href="https://www.funfinity.com/employee-access">Employee Access</a>

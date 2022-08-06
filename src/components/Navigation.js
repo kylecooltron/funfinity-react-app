@@ -28,7 +28,7 @@ const Navigation = ({ closeNavMenu }) => {
         <li className={location.pathname === '/faq' ? 'active' : ''}>
           <Link to="/faq" onClick={ closeNavMenu }>FAQ</Link>
         </li>
-        <li className={location.pathname === '/contact' ? 'active' : ''}>
+        <li className={'App-navbtn-conact' + (location.pathname === '/contact' ? 'active' : '')}>
           <Link to="/contact" onClick={ closeNavMenu }>Contact Us</Link>
         </li>
       </ul>

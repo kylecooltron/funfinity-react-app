@@ -1,5 +1,4 @@
 
-
 //images
 import toys_active from '../images/toys_active.jpg'
 import toys_art from '../images/toys_art.jpg'
@@ -54,7 +53,7 @@ const toysTypes = [
 const Toys = () => {
 
   return (
-    <div>
+    <div className='App-toys'>
       <h2>Toys</h2>
 
       <div>

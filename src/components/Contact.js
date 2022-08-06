@@ -9,7 +9,7 @@ const Contact = () => {
   });
 
   return (
-    <div>
+    <div className='App-contact-form'>
       <InfoSection />
       <iframe 
         title="contact-us-form" 
