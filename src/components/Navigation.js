@@ -1,14 +1,40 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import {useLocation } from 'react-router-dom'
 
 const Navigation = ({ closeNavMenu }) => {
 
   const location = useLocation()
+  const box = useRef(null);
+  const [menuOpened, setMenuOpened] = useState(false)
+
+  useEffect(() => {
+    // Function for click event
+    function handleOutsideClick(event) 
+    {
+        // if we clicked outside the box
+        if( box.current && !box.current.contains(event.target)){
+            // make sure the menu had a chance to open
+            if(menuOpened == true){
+              // close it
+              closeNavMenu();
+              setMenuOpened(false)
+            }else{
+              // keep track of the menu opening
+              setMenuOpened(true)
+            }
+        }
+    }
+
+    // Adding click event listener
+    document.addEventListener("click", handleOutsideClick);
+    return () => document.removeEventListener("click", handleOutsideClick);
+  }, [menuOpened, box]);
+
 
   return (
-    <nav>
-      <button onClick={ closeNavMenu }>X</button>
+    <nav ref={box}>
+      <button onClick={ closeNavMenu } >X</button>
       <ul>
         <li className={location.pathname === '/' ? 'active' : ''}>
           <Link to="/" onClick={ closeNavMenu }>Home</Link>
@@ -37,3 +63,6 @@ const Navigation = ({ closeNavMenu }) => {
 }
 
 export default Navigation
+
+
+

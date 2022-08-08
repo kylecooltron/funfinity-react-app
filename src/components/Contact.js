@@ -9,14 +9,16 @@ const Contact = () => {
   });
 
   return (
-    <div className='App-contact-form'>
+    <div>
       <InfoSection />
-      <iframe 
-        title="contact-us-form" 
-        src="https://docs.google.com/forms/d/e/1FAIpQLScdDnQbUqWu0T0qo2biCKLDeKkoEmfxLJgXS2WSsiRua9crxg/viewform?embedded=true" 
-        width="640" height="729" frameBorder="0" 
-        marginHeight="0" marginWidth="0" scrolling="no">Loading…
-      </iframe>
+      <div className='App-contact-form'>
+        <iframe 
+          title="contact-us-form" 
+          src="https://docs.google.com/forms/d/e/1FAIpQLScdDnQbUqWu0T0qo2biCKLDeKkoEmfxLJgXS2WSsiRua9crxg/viewform?embedded=true" 
+          width="640" height="860" frameBorder="0" 
+          marginHeight="0" marginWidth="0" scrolling="no">Loading…
+        </iframe>
+      </div>
     </div>
   )
 }

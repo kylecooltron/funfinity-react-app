@@ -42,7 +42,7 @@ const Books = () => {
   for (let i = 0; i < bookImages.length; i++) {
       slideimagebuttons.push(
       <Button 
-      className={'App-slide-btn ' + (bookSlideSelection === i ? 'active' : '')} 
+      className={'App-slide-btn ' + (bookSlideSelection === i ? 'activebtn' : '')} 
       key={i} 
       onClick={() => {clickSlide(i)}} 
       text="⬤"/>

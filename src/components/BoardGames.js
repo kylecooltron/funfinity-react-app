@@ -13,11 +13,15 @@ const BoardGames = () => {
   return (
     <div className='App-boardgames-container'>
       <h2>Board Games</h2>
+      <div className='App-boardgames-grid'>
       {
         boardGamesImages.map( (url) => (
-          <img src={url} alt={url} />
+          <div>
+            <img src={url} alt={url} />
+          </div>
         ))
       }
+      </div>
     </div>
   )
 

@@ -43,7 +43,7 @@ function App() {
       
       {
         showNavMenu &&
-        <Navigation closeNavMenu = {toggleNavMenu} />
+        <Navigation closeNavMenu = {toggleNavMenu}/>
       }
       
 

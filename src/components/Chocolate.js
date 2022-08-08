@@ -31,7 +31,7 @@ const Chocolate = () => {
   for (let i = 0; i < cakeImages.length; i++) {
       slideimagebuttons.push(
       <Button 
-      className={'App-slide-btn ' + (cakeSlideSelection === i ? 'active' : '')} 
+      className={'App-slide-btn ' + (cakeSlideSelection === i ? 'activebtn' : '')} 
       key={i} 
       onClick={() => {clickSlide(i)}} 
       text="⬤"/>
