@@ -33,7 +33,6 @@ const Header = ( { logo, toggleNavMenu }) => {
   const getPosition = () => {
     const y = myRef.current.offsetTop;
     setY(y);
-    console.log(y);
   };
 
   const scollToTop = () => {
