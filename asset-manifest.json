@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/funfinity-react-app/static/css/main.e358e8b1.css",
+    "main.css": "/funfinity-react-app/static/css/main.ed7efac6.css",
     "main.js": "/funfinity-react-app/static/js/main.b5cbb9bd.js",
     "static/media/bookslide7.jpg": "/funfinity-react-app/static/media/bookslide7.5e68f9762c00b91d0c84.jpg",
     "static/media/logo.png": "/funfinity-react-app/static/media/logo.6d78c20f00f1e92ab122.png",
@@ -38,11 +38,11 @@
     "static/media/product_toys.jpg": "/funfinity-react-app/static/media/product_toys.56fd5e4962249cb4110f.jpg",
     "static/media/product_games.jpg": "/funfinity-react-app/static/media/product_games.86a5f0a16a832e77d475.jpg",
     "index.html": "/funfinity-react-app/index.html",
-    "main.e358e8b1.css.map": "/funfinity-react-app/static/css/main.e358e8b1.css.map",
+    "main.ed7efac6.css.map": "/funfinity-react-app/static/css/main.ed7efac6.css.map",
     "main.b5cbb9bd.js.map": "/funfinity-react-app/static/js/main.b5cbb9bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e358e8b1.css",
+    "static/css/main.ed7efac6.css",
     "static/js/main.b5cbb9bd.js"
   ]
 }
