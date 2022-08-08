@@ -71,7 +71,7 @@ const Books = () => {
     </div>
 
     <div className='App-booklides-box'>
-      <img src={bookImages[bookSlideSelection]} alt="types of books" />
+      <img src={bookImages[bookSlideSelection]} alt="types of books" loading="lazy"/>
       <div>
         {slideimagebuttons}
       </div>
