@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/funfinity-react-app/static/css/main.bbd7b1f5.css",
-    "main.js": "/funfinity-react-app/static/js/main.9613254f.js",
+    "main.css": "/funfinity-react-app/static/css/main.5b2e697c.css",
+    "main.js": "/funfinity-react-app/static/js/main.d76073fb.js",
     "static/media/toys_gaggifts.jpg": "/funfinity-react-app/static/media/toys_gaggifts.d6bb1e4b5643a06f9521.jpg",
     "static/media/toys_art.jpg": "/funfinity-react-app/static/media/toys_art.628528f844c74ac9d495.jpg",
     "static/media/toys_teens.jpg": "/funfinity-react-app/static/media/toys_teens.fde8a9dea30c9bcf06c0.jpg",
@@ -38,11 +38,11 @@
     "static/media/product_toys.jpg": "/funfinity-react-app/static/media/product_toys.56fd5e4962249cb4110f.jpg",
     "static/media/product_games.jpg": "/funfinity-react-app/static/media/product_games.86a5f0a16a832e77d475.jpg",
     "index.html": "/funfinity-react-app/index.html",
-    "main.bbd7b1f5.css.map": "/funfinity-react-app/static/css/main.bbd7b1f5.css.map",
-    "main.9613254f.js.map": "/funfinity-react-app/static/js/main.9613254f.js.map"
+    "main.5b2e697c.css.map": "/funfinity-react-app/static/css/main.5b2e697c.css.map",
+    "main.d76073fb.js.map": "/funfinity-react-app/static/js/main.d76073fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbd7b1f5.css",
-    "static/js/main.9613254f.js"
+    "static/css/main.5b2e697c.css",
+    "static/js/main.d76073fb.js"
   ]
 }
