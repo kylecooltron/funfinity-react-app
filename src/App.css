@@ -100,9 +100,9 @@ z-index: 2;
 
 .App-logo
 {
-  max-width: 300px;
+  max-width: 250px;
   object-fit: contain;
-  padding: 0.5em 1em;
+  padding: 0.8em 1em 0.2em;
   margin-right: 2.5em;
 }
 
@@ -142,7 +142,7 @@ nav ul li a {
     display: block;
     padding: 1em 1em;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     text-align: center;
     transition: 0.5s;
     /* color: black; */
@@ -215,15 +215,22 @@ color: rgb(255, 81, 0);
   margin-top: 1em;
   border: 0;
   padding: 1em 1em 0;
-  color: rgb(27, 179, 255);
+  color: rgb(17, 136, 196);
   background-color: transparent;
+  cursor: pointer;
 }
+
+.App-slide-btn:hover
+{
+  color: rgb(115, 208, 255);
+}
+
 
 .activebtn
 {
 color: rgb(255, 255, 255);
 /* text-shadow: 0 0 5px rgb(16, 111, 255); */
--webkit-text-stroke: 3px rgb(27, 179, 255);
+-webkit-text-stroke: 3px rgb(2, 138, 206);
 }
 
 
@@ -233,7 +240,7 @@ color: rgb(255, 255, 255);
 
 .App-banner
 {
-  background-color: yellow;
+  background-color: white;
   padding: 1em 2em 4em 2em;
   text-align: center;
   font-size: large;
@@ -244,8 +251,8 @@ color: rgb(255, 255, 255);
 .App-banner img
 {
 width: 100%;
-outline: 10px solid #FFB900;
-border-radius: 1em;
+outline: 5px solid #2a41c4;
+border-radius: 0.5em;
 margin-top: 1em;
 max-width: 700px;
 
@@ -272,12 +279,12 @@ margin: 1em 0 0;
 
 .App-home-main
 {
-  background-color: #11BAFD;
+  background-color: white;
   padding: 1em;
 }
 .App-home-main img
 {
-  border: 10px solid #FFB900;
+  outline: 5px solid #2a41c4;
   border-radius: 1em;
 }
 
@@ -304,7 +311,7 @@ margin: 1em 0 0;
   margin: 3em 0;
   text-align: center;
   border-top: 1px solid rgb(21, 80, 170);
-  color: white;
+  color: #169eec;
 }
 
 .App-product-box h4
@@ -318,6 +325,9 @@ margin: 1em 0 0;
 {
   padding-bottom: 1em;
   text-align: left;
+  background-color: #ecf9ff;
+  color: black;
+  padding: 1em;
 }
 
 .App-product-box img
@@ -327,7 +337,7 @@ margin: 1em 0 0;
 
 .App-email-form
 {
-  background-color: yellow;
+  background-color: rgb(231, 237, 253);
   padding: 2em 0;
   text-align: center;
 }
@@ -338,6 +348,8 @@ margin: 1em 0 0;
   padding: 1em;
   border-radius: 1em;
 }
+
+
 .App-email-form iframe
 {
   margin-bottom: 2em;
@@ -357,7 +369,7 @@ padding: 1em 0;
 
 .App-toys
 {
-  background-color: #3BE8B0;
+  background-color: white;
   text-align: center;
   padding: 1em 0;
 }
@@ -380,7 +392,7 @@ h2
 {
   width: 100%;
   border-radius: 1em;
-  outline: 8px solid #FFB900;
+  outline: 5px solid #FFB900;
 }
 .App-toys figure
 {
@@ -398,7 +410,7 @@ h2
 
 .App-books
 {
-  background-color: #FFB900;
+  background-color: white;
   text-align: center;
   padding: 2em 0 0;
 }
@@ -415,7 +427,7 @@ h2
 .App-book-typeboxes img
 {
   width: 95%;
-  outline: 8px solid #FD636B;
+  outline: 5px solid #FFB900;
   border-radius: 1em;
 }
 
@@ -423,8 +435,8 @@ h2
 {
   background-color: rgba(236, 232, 232, 0.932);
   position: absolute;
-  top: 25%;
-  width: 45%;
+  top: 20%;
+  width: 50%;
   font-size: large;
 }
 
@@ -443,13 +455,13 @@ h2
 .App-booklides-box
 {
 padding: 1.5em;
-background-color: rgb(133, 218, 252);
+background-color: #3BE8B0;
 }
 
 .App-booklides-box img
 {
   width: 95%;
-  outline: 10px solid #11BAFD;
+  outline: 5px solid #11BAFD;
   border-radius: 1em;
   height: 500px;
   object-fit: cover;
@@ -504,7 +516,7 @@ max-width: 200px;
 .App-cakeslides-box img
 {
   height: 500px;
-  outline: 8px solid rgb(148, 148, 148);
+  outline: 5px solid rgb(148, 148, 148);
   object-fit: cover;
   width: 100%;
 }
@@ -514,7 +526,6 @@ max-width: 200px;
 
 .App-faq-container
 {
-  background-color: #7cccfa;
   padding: 1em 2em;
 }
 
@@ -546,7 +557,7 @@ max-width: 200px;
 .App-boardgames-container
 {
   padding: 1em;
-  background-color: #3BE8B0;
+
   text-align: center;
 }
 
@@ -558,7 +569,7 @@ max-width: 200px;
 
 .App-boardgames-grid img
 {
-  outline: 8px solid white;
+  outline: 5px solid #3BE8B0;
   border-radius: 1em;
   width: 100%;
   max-width: 500px;
@@ -569,7 +580,7 @@ max-width: 200px;
 
 .App-contact-form
 {
-  background-color: rgb(153, 224, 252);
+  background-color: rgb(205, 233, 245);
   padding: 2em;
 }
 
@@ -587,7 +598,8 @@ max-width: 200px;
 /* footer */
 
 footer {
-  background-color: #FD636B;
+  background-color: white;
+  border-top: 5px solid rgb(233, 231, 231);
   text-align: center;
   padding: 1.5em 1em 1.5em;
 }
@@ -624,7 +636,7 @@ display: inline-block;
 {
   margin-top: 0.25em;
   padding: 0.25em;
-  background-color: #11BAFD;
+  background-color: #646464;
   width: 100%;
   border-radius: 0.5em;
 }
@@ -715,6 +727,34 @@ display: inline-block;
     max-width: 500px;
   }
 
+
+  .App-slide-btn
+  {
+    padding: 0.5em 1.2em 0;
+    font-size: medium;
+  }
+
+
+  .App-book-typeboxes div div
+  {
+    top: 25%;
+    width: 40%;
+  }
+
+
+    .App-logo
+  {
+    max-width: 300px;
+    padding: 0.8em 1em 0.1em;
+  }
+
+  .App-ham
+  {
+    font-size: 1.3em;
+  }
+  
+
+
 }
 
 
@@ -796,5 +836,24 @@ display: inline-block;
     height: 650px;
     max-width: 550px;
   }
+
+    .App-slide-btn
+  {
+    padding: 0.5em 2em 0;
+    font-size: large;
+  }
+
+
+  .App-ham
+  {
+    font-size: 1.8em;
+    margin: 0;
+    padding-top: 0.75em;
+    padding-left: 2em;
+  }
+  
+
+  
+
 }
 

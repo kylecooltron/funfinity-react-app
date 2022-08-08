@@ -34,7 +34,7 @@ const Navigation = ({ closeNavMenu }) => {
 
   return (
     <nav ref={box}>
-      <button onClick={ closeNavMenu } >X</button>
+      <button onClick={ closeNavMenu } >✖</button>
       <ul>
         <li className={location.pathname === '/' ? 'active' : ''}>
           <Link to="/" onClick={ closeNavMenu }>Home</Link>
