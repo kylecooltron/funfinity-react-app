@@ -7,13 +7,13 @@ import logo_instagram from '../images/socialiglogo.png';
 
 const Footer = ({ logo }) => {
 
-  const scrollTop = () => {
+  const scrollToTop = () => {
     window.scrollTo(0, 0)
   }
 
   return (
     <footer>
-      <Link to="/" onClick={scrollTop} >
+      <Link to="/" onClick={scrollToTop} >
       <img src={logo} className="App-footer-logo" alt="logo" />
       </Link>
 
@@ -38,8 +38,8 @@ const Footer = ({ logo }) => {
       </div>
 
       <div className='App-footer-links'>
-        <Link to="/contact">Contact Us</Link>
-        <Link to="/job">Job Application</Link>
+        <Link to="/contact" onClick={scrollToTop} >Contact Us</Link>
+        <Link to="/job" onClick={scrollToTop} >Job Application</Link>
         <a href="https://www.funfinity.com/employee-access">Employee Access</a>
       </div>
 

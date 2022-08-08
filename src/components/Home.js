@@ -15,9 +15,6 @@ import books_img from '../images/product_books.jpg';
 
 const Home = () => {
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
 
   const [products] = useState([
     {

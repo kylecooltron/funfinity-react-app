@@ -31,31 +31,35 @@ const Navigation = ({ closeNavMenu }) => {
     return () => document.removeEventListener("click", handleOutsideClick);
   }, [menuOpened, box]);
 
+  const closeNavigation = () => {
+    closeNavMenu()
+    window.scrollTo(0, 0)
+  }
 
   return (
     <nav ref={box}>
       <button onClick={ closeNavMenu } >✖</button>
       <ul>
         <li className={location.pathname === '/' ? 'active' : ''}>
-          <Link to="/" onClick={ closeNavMenu }>Home</Link>
+          <Link to="/" onClick={ closeNavigation }>Home</Link>
         </li>
         <li className={location.pathname === '/toys' ? 'active' : ''}>
-          <Link to="/toys" onClick={ closeNavMenu }>Toys</Link>
+          <Link to="/toys" onClick={ closeNavigation }>Toys</Link>
         </li>
         <li className={location.pathname === '/books' ? 'active' : ''}>
-          <Link to="/books" onClick={ closeNavMenu }>Books</Link>
+          <Link to="/books" onClick={ closeNavigation }>Books</Link>
         </li>
         <li className={location.pathname === '/boardgames' ? 'active' : ''}>
-          <Link to="/boardgames" onClick={ closeNavMenu }>Board Games</Link>
+          <Link to="/boardgames" onClick={ closeNavigation }>Board Games</Link>
         </li>
         <li className={location.pathname === '/chocolate' ? 'active' : ''}>
-          <Link to="/chocolate" onClick={ closeNavMenu }>Chocolate</Link>  
+          <Link to="/chocolate" onClick={ closeNavigation }>Chocolate</Link>  
         </li>
         <li className={location.pathname === '/faq' ? 'active' : ''}>
-          <Link to="/faq" onClick={ closeNavMenu }>FAQ</Link>
+          <Link to="/faq" onClick={ closeNavigation }>FAQ</Link>
         </li>
         <li className={'App-navbtn-conact' + (location.pathname === '/contact' ? 'active' : '')}>
-          <Link to="/contact" onClick={ closeNavMenu }>Contact Us</Link>
+          <Link to="/contact" onClick={ closeNavigation }>Contact Us</Link>
         </li>
       </ul>
     </nav>

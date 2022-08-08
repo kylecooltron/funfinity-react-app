@@ -4,10 +4,6 @@ import { useLayoutEffect } from 'react'
 
 const Job = () => {
 
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0)
-  });
-
   return (
     <div>
       <h2>Job Application</h2>

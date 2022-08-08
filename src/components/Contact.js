@@ -1,12 +1,14 @@
 
 import InfoSection from './InfoSection'
 import { useLayoutEffect } from 'react'
+import { Link } from "react-router-dom"
 
 const Contact = () => {
 
-  useLayoutEffect(() => {
+  const scrollToTop = () => {
     window.scrollTo(0, 0)
-  });
+  }
+
 
   return (
     <div>
@@ -18,6 +20,9 @@ const Contact = () => {
           width="640" height="860" frameBorder="0" 
           marginHeight="0" marginWidth="0" scrolling="no">Loading…
         </iframe>
+
+        <Link to='/' onClick={scrollToTop}>Back to Home</Link>
+
       </div>
     </div>
   )

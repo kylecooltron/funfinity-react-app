@@ -582,6 +582,14 @@ max-width: 200px;
 {
   background-color: rgb(205, 233, 245);
   padding: 2em;
+  text-align: center;
+}
+
+.App-contact-form a
+{
+  background-color: #169eec;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .App-contact-form iframe
@@ -589,7 +597,7 @@ max-width: 200px;
   background-color: white;
   max-width: 700px;
   border-radius: 1em;
-  margin: 0 auto;
+  margin: 0 auto 2em;
   padding-top: 1em;
   display: table;
 }

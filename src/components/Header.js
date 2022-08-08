@@ -36,6 +36,9 @@ const Header = ( { logo, toggleNavMenu }) => {
     console.log(y);
   };
 
+  const scollToTop = () => {
+    window.scrollTo(0, 0)
+  }
 
   useEffect(() => {
     getPosition();
@@ -54,7 +57,7 @@ const Header = ( { logo, toggleNavMenu }) => {
 
       <div ref={myRef} className={"App-navbar" + ((scrollPosition >= y) ? ' sticky' : '')}>
         <a className="App-ham" href="#/" onClick={toggleNavMenu} >☰</a>
-        <Link to='/'><img src={logo} className="App-logo" alt="logo" /></Link>
+        <Link to='/' onClick={scollToTop} ><img src={logo} className="App-logo" alt="logo" /></Link>
       </div>
       <div className="App-nav-empty"></div>
 
