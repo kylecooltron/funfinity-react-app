@@ -94,7 +94,7 @@ z-index: 2;
 {
   float:left;
   margin: 0.3em;
-  padding: 1em;
+  padding: 1em 0.1em 1em 1em;
   font-size: larger;
 }
 
@@ -103,7 +103,7 @@ z-index: 2;
   max-width: 250px;
   object-fit: contain;
   padding: 0.8em 1em 0.2em;
-  margin-right: 2.5em;
+  /* margin-right: 2.5em; */
 }
 
 .sticky {
@@ -142,7 +142,7 @@ nav ul li a {
     display: block;
     padding: 1em 1em;
     text-decoration: none;
-    font-size: 1.45rem;
+    font-size: 1.4rem;
     text-align: center;
     transition: 0.5s;
     /* color: black; */
@@ -436,7 +436,7 @@ h2
   background-color: rgba(236, 232, 232, 0.932);
   position: absolute;
   top: 20%;
-  width: 50%;
+  width: 57%;
   font-size: large;
 }
 
@@ -860,6 +860,10 @@ display: inline-block;
     padding-left: 2em;
   }
   
+    .App-logo
+  {
+    margin-right: 2.5em;
+  }
 
   
 

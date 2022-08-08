@@ -49,7 +49,7 @@ const Header = ( { logo, toggleNavMenu }) => {
       { /* show the email signup bar at the top of the page until the X button is clicked */
         showEmailSignup &&
         <div className ="App-email-signup">
-          <Link to='/emailform'> Click here to sign up for our email newsletter! </Link>
+          <Link to='/emailform'> Click here to sign up for our newsletter! </Link>
           <button onClick={closeEmail}> ✖ </button>
         </div>
       }
