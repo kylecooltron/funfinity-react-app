@@ -551,8 +551,16 @@ max-width: 200px;
   text-align: center;
   width: 100%;
   padding-top: 2em;
-}
 
+}
+.App-faq-container p a
+{
+ color:rgb(0, 58, 146)
+}
+.App-faq-container p a:hover
+{
+ color:rgb(113, 19, 236)
+}
 
 
 .App-boardgames-container
